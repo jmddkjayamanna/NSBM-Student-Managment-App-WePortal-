@@ -5,4 +5,4 @@ JMDDK Jayamanna : 19768 :	jmddkjayamanna@students.nsbm.ac.lk (Github Username : 
 RKSK Rajapakshe : 19771 :	rkskrajapakshe@students.nsbm.ac.lk (Github Username : rkskrajapakshe)
 HAJM Kumari : 19848	: hajmkumar@students.nsbm.ac.lk (Github Username : hajmkumari)
 MPN Dharmasena : 19622 :	mpndharmasena@students.nsbm.ac.lk (Github Username : mpnimasha )
-GK Ranasinghe :	19767 :	gkranasinghe@students.nsbm.ac.lk (Github Username : )
+GK Ranasinghe :	19767 :	gkranasinghe@students.nsbm.ac.lk (Github Username : gkranasinghe123 )
