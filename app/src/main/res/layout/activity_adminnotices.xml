@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminnotices"
+    android:background="@drawable/lnoticeback">
+
+
+    <ImageButton
+        android:id="@+id/button45"
+        android:layout_width="137dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/atgroup_1"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button46"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+        android:foreground="?android:attr/selectableItemBackground"
+        />
+
+    <ImageButton
+        android:id="@+id/button46"
+        android:layout_width="137dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="194dp"
+        android:background="@drawable/ngroup_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.899"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:foreground="?android:attr/selectableItemBackground"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName42"
+        android:layout_width="280dp"
+        android:layout_height="205dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/lecinclasstext"
+        android:elevation="8dp"
+        android:ems="10"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:hint="Type Notice...."
+        android:inputType="textMultiLine"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/button45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName43"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName43"
+        android:layout_width="285dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="63dp"
+        android:background="@drawable/lecinclasstext"
+        android:elevation="8dp"
+        android:ems="10"
+        android:hint="Degree Program"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.455" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName44"
+        android:layout_width="285dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="63dp"
+        android:background="@drawable/lecinclasstext"
+        android:elevation="8dp"
+        android:ems="10"
+        android:hint="Batch"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <ImageButton
+        android:id="@+id/button47"
+        android:layout_width="346dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="554dp"
+        android:background="@drawable/ngroup_6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

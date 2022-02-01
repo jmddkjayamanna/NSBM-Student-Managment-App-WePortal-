@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nsbm_weportal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NSBM_WePortal">
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".StudentTimetable"
+            android:exported="false" />
+        <activity
+            android:name=".StudentResult"
+            android:exported="false" />
+        <activity
+            android:name=".StudentResultDisplay"
+            android:exported="false" />
+        <activity
+            android:name=".StudentInclassDisplay"
+            android:exported="false" />
+        <activity
+            android:name=".StudentInclass"
+            android:exported="false" />
+        <activity
+            android:name=".StudentDash"
+            android:exported="false" />
+        <activity
+            android:name=".StudentAttendance"
+            android:exported="false" />
+        <activity
+            android:name=".LecTimetable2"
+            android:exported="false" />
+        <activity
+            android:name=".LecTimetable"
+            android:exported="false" />
+        <activity
+            android:name=".LecNotices"
+            android:exported="false" />
+        <activity
+            android:name=".LecInclassExamUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".LecInclassExam2"
+            android:exported="false" />
+        <activity
+            android:name=".LecInclassExam"
+            android:exported="false" />
+        <activity
+            android:name=".LecDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".adminupdatetimetable"
+            android:exported="false" />
+        <activity
+            android:name=".admintimetable"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admindashboard"
+            android:exported="false" />
+        <activity
+            android:name=".adminaddtimetable"
+            android:exported="false" />
+        <activity
+            android:name=".adminnotices"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
