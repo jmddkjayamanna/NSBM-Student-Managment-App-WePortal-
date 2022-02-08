@@ -7,4 +7,36 @@
     tools:context=".StudentAttendance"
     android:background="@drawable/atten1">
 
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/codeScannerView"
+        android:layout_width="381dp"
+        android:layout_height="499dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="141dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button54"
+        android:layout_width="162dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/addbtn"
+        android:text="Add"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codeScannerView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
