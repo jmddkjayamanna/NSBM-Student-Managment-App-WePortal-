@@ -28,7 +28,7 @@
             android:name=".StudentInclass"
             android:exported="false" />
         <activity
-            android:name=".StudentDash"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".StudentAttendance"
@@ -70,7 +70,7 @@
             android:name=".adminaddtimetable"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".StudentDash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

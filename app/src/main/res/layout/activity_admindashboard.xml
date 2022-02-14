@@ -9,8 +9,8 @@
 
     >
 
-    <ImageButton
-        android:id="@+id/button37"
+    <Button
+        android:id="@+id/adminDash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -27,8 +27,8 @@
         android:clickable="true"
         android:focusable="true"/>
 
-    <ImageButton
-        android:id="@+id/button39"
+    <Button
+        android:id="@+id/adminNotices"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -39,7 +39,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button37"
+        app:layout_constraintTop_toBottomOf="@+id/adminDash"
         tools:ignore="SpeakableTextPresentCheck"
         android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true"
