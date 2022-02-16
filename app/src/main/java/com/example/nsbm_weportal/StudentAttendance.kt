@@ -11,12 +11,16 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import com.budiyev.android.codescanner.AutoFocusMode
 import com.budiyev.android.codescanner.CodeScanner
 import com.budiyev.android.codescanner.CodeScannerView
 import com.budiyev.android.codescanner.DecodeCallback
 import com.budiyev.android.codescanner.ErrorCallback
 import com.budiyev.android.codescanner.ScanMode
+import com.google.android.material.navigation.NavigationView
+
 private const val CAMERA_REQUEST_CODE=101
 class StudentAttendance : AppCompatActivity() {
 
@@ -24,11 +28,74 @@ class StudentAttendance : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_student_attendance)
-
+        Menu()
         setupPermissions()
         codeScanner()
     }
+    private fun Menu()
+    {
+        val drawerLayout: DrawerLayout = findViewById(R.id.drawerLayoutS2)
+        val navView: NavigationView = findViewById(R.id.nav_viewS2)
+        val btn=findViewById<Button>(R.id.menuS2)
 
+        btn.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(view: View?) {
+                drawerLayout.openDrawer(GravityCompat.START);
+            }
+
+        })
+
+
+        navView.setNavigationItemSelectedListener {
+            when (it.itemId) {
+                R.id.nav_dash -> {
+                    this.startActivity(Intent(this,StudentDash::class.java))
+                    Toast.makeText(
+                        applicationContext,
+                        "Clicked Dashboard",
+                        Toast.LENGTH_SHORT
+                    ).show()}
+                R.id.nav_profile -> {Toast.makeText(
+                    applicationContext,
+                    "Clicked Profile",
+                    Toast.LENGTH_SHORT
+                ).show()
+                    this.startActivity(Intent(this,Profile::class.java))}
+                R.id.nav_notices -> Toast.makeText(
+                    applicationContext,
+                    "Clicked Notices",
+                    Toast.LENGTH_SHORT
+                ).show()
+                R.id.nav_notifications -> Toast.makeText(
+                    applicationContext,
+                    "Clicked Notifications",
+                    Toast.LENGTH_SHORT
+                ).show()
+                R.id.nav_help -> Toast.makeText(
+                    applicationContext,
+                    "Clicked Help",
+                    Toast.LENGTH_SHORT
+                ).show()
+                R.id.nav_about -> Toast.makeText(
+                    applicationContext,
+                    "Clicked About",
+                    Toast.LENGTH_SHORT
+                ).show()
+                R.id.nav_logout -> {
+                    this.startActivity(Intent(this,MainActivity::class.java))
+                    Toast.makeText(
+                        applicationContext,
+                        "Clicked Logout",
+                        Toast.LENGTH_SHORT
+                    ).show()}
+
+            }
+            true
+
+        }
+
+
+    }
     private fun codeScanner() {
         val scannerView = findViewById<CodeScannerView>(R.id.codeScannerView)
         val attendencebtn = findViewById<Button>(R.id.button54)

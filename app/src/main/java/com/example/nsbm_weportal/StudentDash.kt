@@ -29,9 +29,9 @@ class StudentDash : AppCompatActivity() {
 
  private fun Menu()
 {
-    val drawerLayout: DrawerLayout = findViewById(R.id.drawerLayout)
-    val navView: NavigationView = findViewById(R.id.nav_view)
-    val btn=findViewById<Button>(R.id.menu1)
+    val drawerLayout: DrawerLayout = findViewById(R.id.drawerLayoutS)
+    val navView: NavigationView = findViewById(R.id.nav_viewS)
+    val btn=findViewById<Button>(R.id.menuS)
 
     btn.setOnClickListener(object : View.OnClickListener {
         override fun onClick(view: View?) {
