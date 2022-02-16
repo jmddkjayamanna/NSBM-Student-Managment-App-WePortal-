@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+
+    >
+
+<item
+    android:id="@+id/nav_dash"
+    android:title="Dashboard"
+    android:icon="@drawable/ic_baseline_dashboard_24"
+
+
+    />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_account_circle_24"/>
+
+    <item
+        android:id="@+id/nav_notices"
+        android:title="Notices"
+        android:icon="@drawable/ic_baseline_notes_24"/>
+
+    <item
+        android:id="@+id/nav_notifications"
+        android:title="Notifications"
+        android:icon="@drawable/ic_baseline_notifications_24"/>
+    <item
+        android:id="@+id/nav_tc"
+        android:title="Terms &amp; Conditions"
+        android:icon="@drawable/ic_baseline_rule_24"/>
+
+    <item
+        android:id="@+id/nav_help"
+        android:title="Help"
+        android:icon="@drawable/ic_baseline_help_24"/>
+    <item
+        android:id="@+id/nav_about"
+        android:title="About"
+        android:icon="@drawable/ic_baseline_priority_high_24"/>
+
+<item android:title="More">
+    <menu>
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout"
+            android:icon="@drawable/ic_baseline_login_24"/>
+    </menu>
+</item>
+</menu>
