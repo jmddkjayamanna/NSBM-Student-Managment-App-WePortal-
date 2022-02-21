@@ -1,7 +1,14 @@
 package com.example.nsbm_weportal
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
+import android.widget.Toast
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.navigation.NavigationView
 
 class LecInclassExamUpdate : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

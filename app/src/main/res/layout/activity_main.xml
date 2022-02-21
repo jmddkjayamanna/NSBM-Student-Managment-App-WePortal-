@@ -38,9 +38,10 @@
         android:layout_marginEnd="85dp"
         android:background="@drawable/logintext"
         android:ems="11"
-
+android:textColor="@color/black"
         android:fontFamily="sans-serif"
         android:hint="Username"
+        android:textColorHint="#8E8D8A"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:singleLine="false"
@@ -62,10 +63,10 @@
         android:layout_marginEnd="85dp"
         android:layout_marginBottom="155dp"
         android:background="@drawable/logintext"
-
+android:textColor="@color/black"
         android:ems="11"
         android:fontFamily="sans-serif"
-
+android:textColorHint="#8E8D8A"
         android:hint="Password"
         android:inputType="textPassword"
         android:minHeight="48dp"

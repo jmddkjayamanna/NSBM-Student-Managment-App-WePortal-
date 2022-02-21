@@ -25,50 +25,51 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName17"
-        android:layout_width="285dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="63dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="63dp"
-        android:layout_marginBottom="453dp"
-        android:background="@drawable/lecinclasstext"
-        android:elevation="8dp"
-        android:ems="10"
-        android:hint="Batch"
-        android:inputType="textPersonName"
-        android:paddingStart="20dp"
-        android:textColorHint="@color/black"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button29" />
+        <EditText
+            android:id="@+id/editTextTextPersonName17"
+            android:layout_width="285dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="63dp"
+            android:layout_marginEnd="63dp"
+            android:textColor="@color/black"
+            android:background="@drawable/lecinclasstext"
+            android:elevation="8dp"
+            android:ems="10"
+            android:hint="Batch"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textColorHint="@color/black"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.353" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName18"
-        android:layout_width="285dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="63dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="63dp"
-        android:layout_marginBottom="372dp"
-        android:background="@drawable/lecinclasstext"
-        android:elevation="8dp"
-        android:ems="10"
-        android:hint="Degree Program"
-        android:inputType="textPersonName"
-        android:paddingStart="20dp"
-        android:textColorHint="@color/black"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName17" />
+        <EditText
+            android:id="@+id/editTextTextPersonName18"
+            android:layout_width="285dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="63dp"
+            android:layout_marginEnd="63dp"
+            android:background="@drawable/lecinclasstext"
+            android:elevation="8dp"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:hint="Degree Program"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textColorHint="@color/black"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.466" />
 
-    <EditText
+        <EditText
         android:id="@+id/editTextTextPersonName19"
         android:layout_width="280dp"
         android:layout_height="205dp"
@@ -79,6 +80,7 @@
         android:background="@drawable/lecinclasstext"
         android:elevation="8dp"
         android:ems="10"
+            android:textColor="@color/black"
         android:hint="Type Notice...."
         android:inputType="textMultiLine"
         android:paddingStart="20dp"
@@ -91,33 +93,6 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName18"
         app:layout_constraintVertical_bias="0.045" />
 
-    <ImageButton
-        android:id="@+id/button31"
-        android:layout_width="137dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginEnd="194dp"
-        android:layout_marginBottom="71dp"
-        android:background="@drawable/ngroup_4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName19"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageButton
-        android:id="@+id/button32"
-        android:layout_width="137dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="71dp"
-        android:background="@drawable/ngroup_5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button31"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName19"
-        app:layout_constraintVertical_bias="0.454"
-        tools:ignore="SpeakableTextPresentCheck" />
         <Button
             android:id="@+id/menuA5"
             android:layout_width="41dp"
@@ -135,6 +110,39 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.023"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/button30"
+            android:layout_width="154dp"
+            android:layout_height="58dp"
+            android:background="@drawable/lecdashbutn2"
+            android:backgroundTint="#379683"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.182"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.881" />
+
+        <Button
+            android:id="@+id/button31"
+            android:layout_width="154dp"
+            android:layout_height="58dp"
+            android:background="@drawable/lecdashbutn2"
+            android:backgroundTint="@color/white"
+            android:text="View"
+            android:textColor="#379683"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.824"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.881" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_viewA5"
