@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "196382630852",
+    "project_id": "weportal-app-db",
+    "storage_bucket": "weportal-app-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196382630852:android:f5cc9ef77fee0926f6fa91",
+        "android_client_info": {
+          "package_name": "com.example.nsbm_weportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196382630852-3cto2b4h5giaql0jqsqtlu1qdcca2i7r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf-emwAyhHhaExXC2PlWChTd5F8o63-lk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196382630852-3cto2b4h5giaql0jqsqtlu1qdcca2i7r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

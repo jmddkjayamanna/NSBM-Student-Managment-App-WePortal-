@@ -15,8 +15,10 @@ class LecDashboard : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lec_dashboard)
+
         changeDash()
         Menu()
+
     }
     private fun changeDash() {
         val lecbtnm1 = findViewById<ImageButton>(R.id.LecInclassbtn)
