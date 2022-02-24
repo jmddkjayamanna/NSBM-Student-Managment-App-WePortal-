@@ -5,16 +5,75 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 
 class StudentResult : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_student_result)
         Menu()
+
+        val btn1=findViewById<ImageButton>(R.id.btny1s1)
+        val btn2=findViewById<ImageButton>(R.id.btny1s2)
+        val btn3=findViewById<ImageButton>(R.id.btny2s1)
+        val btn4=findViewById<ImageButton>(R.id.btny2s2)
+        val btn5=findViewById<ImageButton>(R.id.btny3s1)
+        val btn6=findViewById<ImageButton>(R.id.btny3s2)
+        val btn7=findViewById<ImageButton>(R.id.btny4s1)
+        val btn8=findViewById<ImageButton>(R.id.btny4s2)
+
+
+            btn1.setOnClickListener(object : View.OnClickListener {
+                override fun onClick(view: View?) {
+
+
+
+                }
+
+                })
+
+            btn2.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(view: View?) {
+
+
+            }})
+        btn3.setOnClickListener(object : View.OnClickListener {
+                    override fun onClick(view: View?) {
+
+                    }})
+        btn4.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(view: View?) {
+
+
+                        }})
+        btn5.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(view: View?) {
+
+
+                            }})
+        btn6.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(view: View?) {
+
+
+                                }
+                            })
+        btn7.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(view: View?) {
+
+
+            }
+        })
+        btn8.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(view: View?) {
+
+
+            }})
     }
     private fun Menu()
     {

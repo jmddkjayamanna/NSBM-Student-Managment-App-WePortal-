@@ -18,7 +18,7 @@
             android:name=".StudentTimetable"
             android:exported="false" />
         <activity
-            android:name=".StudentResult"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".StudentResultDisplay"
@@ -54,7 +54,7 @@
             android:name=".LecInclassExam"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LecDashboard"
             android:exported="false" />
         <activity
             android:name=".adminupdatetimetable"
@@ -72,7 +72,7 @@
             android:name=".adminaddtimetable"
             android:exported="false" />
         <activity
-            android:name=".LecDashboard"
+            android:name=".StudentResult"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -17,6 +17,7 @@ import androidx.core.view.GravityCompat
 
 
 class StudentDash : AppCompatActivity() {
+
     lateinit var toggle: ActionBarDrawerToggle
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -15,6 +16,16 @@ class StudentInclassDisplay : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_student_inclass_display)
         Menu()
+
+        //Variable Assign
+        var backbutton= findViewById<ImageButton>(R.id.backbtn)
+
+        backbutton.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(view: View?) {
+              startActivity(Intent(this@StudentInclassDisplay,StudentInclass::class.java))
+            }
+            })
+
     }
     private fun Menu()
     {
@@ -81,4 +92,6 @@ class StudentInclassDisplay : AppCompatActivity() {
 
 
     }
+
+
 }
