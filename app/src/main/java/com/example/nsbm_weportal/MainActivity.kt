@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
                                     {
                                         startActivity(Intent(this@MainActivity,admindashboard::class.java))
                                     }
-                                    else{
+                                    if(type.equals("Lecturer")){
                                         startActivity(Intent(this@MainActivity,LecDashboard::class.java))
                                     }
                                 }
