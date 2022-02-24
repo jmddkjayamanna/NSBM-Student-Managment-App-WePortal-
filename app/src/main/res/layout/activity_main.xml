@@ -8,13 +8,12 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/loginBtn"
         android:layout_width="218dp"
         android:layout_height="56dp"
         android:layout_marginStart="87dp"
         android:layout_marginTop="37dp"
         android:layout_marginEnd="88dp"
-        android:layout_marginBottom="40dp"
         android:background="@drawable/roundbtn"
 
 
@@ -25,12 +24,13 @@
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/Usernametext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="117dp"
@@ -55,29 +55,29 @@ android:textColor="@color/black"
         app:layout_constraintVertical_bias="0.682" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/passwordtext"
         android:layout_width="268dp"
         android:layout_height="51dp"
         android:layout_marginStart="117dp"
         android:layout_marginTop="26dp"
         android:layout_marginEnd="85dp"
-        android:layout_marginBottom="155dp"
         android:background="@drawable/logintext"
-android:textColor="@color/black"
         android:ems="11"
         android:fontFamily="sans-serif"
-android:textColorHint="#8E8D8A"
         android:hint="Password"
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:singleLine="false"
         android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textColorHint="#8E8D8A"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintHorizontal_bias="0.779"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
