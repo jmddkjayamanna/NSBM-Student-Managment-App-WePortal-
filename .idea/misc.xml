@@ -61,20 +61,23 @@
         <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/drawable/shape1.xml" value="0.14305555555555555" />
         <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_adminaddtimetable.xml" value="0.16486486486486487" />
         <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_admindashboard.xml" value="0.16486486486486487" />
+        <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_adminnotices.xml" value="0.2" />
         <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_admintimetable.xml" value="0.16486486486486487" />
         <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_lec_dashboard.xml" value="0.2" />
         <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_lec_inclass_exam.xml" value="0.176" />
+        <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_lec_inclass_exam2.xml" value="0.176" />
         <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_lec_inclass_exam_update.xml" value="0.11148648648648649" />
         <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_lec_notices.xml" value="0.16486486486486487" />
         <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_lec_timetable.xml" value="0.16486486486486487" />
         <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_lec_timetable2.xml" value="0.16486486486486487" />
-        <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_profile.xml" value="0.16486486486486487" />
         <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_student_attendance.xml" value="0.16486486486486487" />
         <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_student_dash.xml" value="0.2" />
         <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_student_inclass.xml" value="0.16486486486486487" />
         <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_student_inclass_display.xml" value="0.16486486486486487" />
-        <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_student_result.xml" value="0.11148648648648649" />
+        <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_student_result.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/activity_student_result_display.xml" value="0.176" />
         <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/layout/nav_header.xml" value="0.16486486486486487" />
         <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/menu/menu.xml" value="0.16486486486486487" />
         <entry key="..\:/Users/bimsa/OneDrive/Desktop/NSBM-Student-Managment-App-WePortal-/app/src/main/res/menu/nav_menu.xml" value="0.176" />
