@@ -12,7 +12,10 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 
 class StudentResult : AppCompatActivity() {
+    companion object {
+        var YScheck :String=String()
 
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -29,49 +32,66 @@ class StudentResult : AppCompatActivity() {
         val btn8=findViewById<ImageButton>(R.id.btny4s2)
 
 
+
             btn1.setOnClickListener(object : View.OnClickListener {
                 override fun onClick(view: View?) {
-
+                Toast.makeText(this@StudentResult,"Year 1 Semester 1 Results",Toast.LENGTH_LONG).show()
+                    YScheck="Y1S1"
+                    startActivity(Intent(this@StudentResult,StudentResultDisplay::class.java))
 
 
                 }
-
                 })
 
             btn2.setOnClickListener(object : View.OnClickListener {
             override fun onClick(view: View?) {
-
+                Toast.makeText(this@StudentResult,"Year 1 Semester 2 Results",Toast.LENGTH_LONG).show()
+                YScheck="Y1S2"
+                startActivity(Intent(this@StudentResult,StudentResultDisplay::class.java))
 
             }})
         btn3.setOnClickListener(object : View.OnClickListener {
                     override fun onClick(view: View?) {
+                        Toast.makeText(this@StudentResult,"Year 2 Semester 1 Results",Toast.LENGTH_LONG).show()
+                        YScheck="Y2S1"
+                        startActivity(Intent(this@StudentResult,StudentResultDisplay::class.java))
 
                     }})
         btn4.setOnClickListener(object : View.OnClickListener {
             override fun onClick(view: View?) {
-
+                Toast.makeText(this@StudentResult,"Year 2 Semester 2 Results",Toast.LENGTH_LONG).show()
+                YScheck="Y2S2"
+                startActivity(Intent(this@StudentResult,StudentResultDisplay::class.java))
 
                         }})
         btn5.setOnClickListener(object : View.OnClickListener {
             override fun onClick(view: View?) {
-
+                Toast.makeText(this@StudentResult,"Year 3 Semester 1 Results",Toast.LENGTH_LONG).show()
+                YScheck="Y3S1"
+                startActivity(Intent(this@StudentResult,StudentResultDisplay::class.java))
 
                             }})
         btn6.setOnClickListener(object : View.OnClickListener {
             override fun onClick(view: View?) {
-
+                Toast.makeText(this@StudentResult,"Year 3 Semester 2 Results",Toast.LENGTH_LONG).show()
+                YScheck="Y3S2"
+                startActivity(Intent(this@StudentResult,StudentResultDisplay::class.java))
 
                                 }
                             })
         btn7.setOnClickListener(object : View.OnClickListener {
             override fun onClick(view: View?) {
-
+                Toast.makeText(this@StudentResult,"Year 4 Semester 1 Results",Toast.LENGTH_LONG).show()
+                YScheck="Y4S1"
+                startActivity(Intent(this@StudentResult,StudentResultDisplay::class.java))
 
             }
         })
         btn8.setOnClickListener(object : View.OnClickListener {
             override fun onClick(view: View?) {
-
+                Toast.makeText(this@StudentResult,"Year 4 Semester 2 Results",Toast.LENGTH_LONG).show()
+                YScheck="Y4S2"
+                startActivity(Intent(this@StudentResult,StudentResultDisplay::class.java))
 
             }})
     }
