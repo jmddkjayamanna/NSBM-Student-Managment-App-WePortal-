@@ -8,13 +8,25 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.navigation.NavigationView
 
 class LecTimetable : AppCompatActivity() {
+
+    private var layoutManager:RecyclerView.LayoutManager?=null
+    private var adapter:RecyclerView.Adapter<RecycleAdapter.ViewHolder>?=null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lec_timetable)
         Menu()
+        layoutManager=LinearLayoutManager(this)
+        var getRv=findViewById<RecyclerView>(R.id.rview)
+        getRv.layoutManager=layoutManager
+        adapter=RecycleAdapter()
+        getRv.adapter=adapter
+
     }
     private fun Menu()
     {
