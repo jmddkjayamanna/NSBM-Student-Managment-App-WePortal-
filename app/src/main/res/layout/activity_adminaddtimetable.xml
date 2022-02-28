@@ -7,11 +7,153 @@
     android:id="@+id/drawerLayoutL2"
     tools:context=".adminaddtimetable"
     android:background="@drawable/admintime2">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <Button
-        android:id="@+id/button38"
+
+        <DatePicker
+            android:id="@+id/datea"
+            android:layout_width="298dp"
+            android:layout_height="79dp"
+
+            android:layout_marginStart="10dp"
+
+            android:background="@drawable/lecdashbutn2"
+            android:calendarTextColor="@color/black"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.472"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.674" />
+
+        <Spinner
+            android:id="@+id/halla"
+            android:layout_width="92dp"
+            android:layout_height="65dp"
+            android:background="@drawable/lecdashbutn2"
+            android:contentDescription="Select Batch"
+
+            android:padding="20dp"
+
+            android:spinnerMode="dialog"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.796"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <Spinner
+            android:id="@+id/modea"
+            android:layout_width="82dp"
+            android:layout_height="60dp"
+            android:background="@drawable/lecdashbutn2"
+            android:contentDescription="Select Batch"
+
+            android:padding="20dp"
+
+            android:spinnerMode="dialog"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.801" />
+
+        <Spinner
+            android:id="@+id/timea"
+            android:layout_width="89dp"
+            android:layout_height="62dp"
+            android:background="@drawable/lecdashbutn2"
+            android:contentDescription="Select Batch"
+
+            android:padding="20dp"
+
+            android:spinnerMode="dialog"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.177"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.803" />
+
+        <Spinner
+            android:id="@+id/lectuerera"
+            android:layout_width="251dp"
+            android:layout_height="60dp"
+            android:background="@drawable/lecdashbutn2"
+            android:contentDescription="Select Batch"
+
+            android:padding="20dp"
+
+            android:spinnerMode="dialog"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.556" />
+
+        <Spinner
+            android:id="@+id/modulea"
+            android:layout_width="251dp"
+            android:layout_height="60dp"
+            android:background="@drawable/lecdashbutn2"
+            android:contentDescription="Select Batch"
+
+            android:padding="20dp"
+
+            android:spinnerMode="dialog"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.451" />
+
+        <Spinner
+            android:id="@+id/degreea"
+            android:layout_width="251dp"
+            android:layout_height="60dp"
+            android:background="@drawable/lecdashbutn2"
+            android:contentDescription="Select Batch"
+
+            android:padding="20dp"
+
+            android:spinnerMode="dialog"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.341" />
+
+        <Spinner
+            android:id="@+id/batcha"
+            android:layout_width="251dp"
+            android:layout_height="60dp"
+            android:background="@drawable/lecdashbutn2"
+            android:contentDescription="Select Batch"
+
+            android:padding="20dp"
+
+            android:spinnerMode="dialog"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.234" />
+
+        <Button
+        android:id="@+id/addtime"
         android:layout_width="176dp"
         android:layout_height="57dp"
         android:layout_marginStart="117dp"
@@ -24,192 +166,20 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"/><![CDATA[
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName34" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName23"
-        android:layout_width="280dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="62dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="63dp"
-        android:layout_marginBottom="475dp"
-        android:background="@drawable/lecinclasstext"
-        android:elevation="8dp"
-        android:ems="10"
-        android:hint="Degree Program"
-        android:inputType="textPersonName"
-        android:paddingStart="20dp"
-        android:textColorHint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName21" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName24"
-        android:layout_width="280dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="62dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="63dp"
-        android:layout_marginBottom="409dp"
-        android:background="@drawable/lecinclasstext"
-        android:elevation="8dp"
-        android:ems="10"
-        android:hint="Module"
-        android:inputType="textPersonName"
-        android:paddingStart="20dp"
-        android:textColorHint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName23"
-        app:layout_constraintVertical_bias="0.333" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName27"
-        android:layout_width="280dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="62dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="63dp"
-        android:layout_marginBottom="342dp"
-        android:background="@drawable/lecinclasstext"
-        android:elevation="8dp"
-        android:ems="10"
-        android:hint="Lecturer"
-        android:inputType="textPersonName"
-        android:paddingStart="20dp"
-        android:textColorHint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName24"
-        app:layout_constraintVertical_bias="1.0" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName29"
-        android:layout_width="280dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="62dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="63dp"
-        android:layout_marginBottom="275dp"
-        android:background="@drawable/lecinclasstext"
-        android:elevation="8dp"
-        android:ems="10"
-        android:hint="Date"
-        android:inputType="textPersonName"
-        android:paddingStart="20dp"
-        android:textColorHint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName27" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName33"
-        android:layout_width="132dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="214dp"
-        android:layout_marginBottom="147dp"
-        android:background="@drawable/lecinclasstext"
-        android:elevation="8dp"
-        android:ems="10"
-        android:hint="Mode"
-        android:inputType="textPersonName"
-        android:paddingStart="20dp"
-        android:textColorHint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName30" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="132dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="147dp"
-        android:background="@drawable/lecinclasstext"
-        android:elevation="8dp"
-        android:ems="10"
-        android:hint="Hall"
-        android:inputType="textPersonName"
-        android:paddingStart="20dp"
-        android:textColorHint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName33"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName30"
-        app:layout_constraintVertical_bias="0.0" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName30"
-        android:layout_width="132dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="67dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="215dp"
-        android:background="@drawable/lecinclasstext"
-        android:elevation="8dp"
-        android:ems="10"
-        android:hint="Start Time"
-        android:inputType="textPersonName"
-        android:paddingStart="20dp"
-        android:textColorHint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName32"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName29" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName32"
-        android:layout_width="132dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="66dp"
-        android:layout_marginBottom="215dp"
-        android:background="@drawable/lecinclasstext"
-        android:elevation="8dp"
-        android:ems="10"
-        android:hint="End Time"
-        android:inputType="textPersonName"
-        android:paddingStart="20dp"
-        android:textColorHint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName30"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName29" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName21"
-        android:layout_width="280dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="62dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="63dp"
-        android:layout_marginBottom="557dp"
-        android:background="@drawable/lecinclasstext"
-        android:elevation="8dp"
-        android:ems="10"
-        android:hint="Batch"
-        android:inputType="textPersonName"
-        android:paddingStart="20dp"
-        android:textColorHint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.708" />
+
+
+        ]]>
 
         <Button
             android:id="@+id/menul2"

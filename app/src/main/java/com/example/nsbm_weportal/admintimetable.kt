@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -15,6 +16,12 @@ class admintimetable : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admintimetable)
         Menu()
+
+        var addbtn=findViewById<ImageButton>(R.id.addtime2)
+        addbtn.setOnClickListener {
+            val intent3 = Intent(this, adminaddtimetable::class.java)
+            startActivity(intent3)
+        }
     }
     private fun Menu()
     {

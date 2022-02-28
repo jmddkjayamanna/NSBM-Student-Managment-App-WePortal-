@@ -110,7 +110,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName28" />
 
     <ImageButton
-        android:id="@+id/button41"
+        android:id="@+id/addtime2"
         android:layout_width="119dp"
         android:layout_height="91dp"
         android:layout_marginStart="11dp"
@@ -134,7 +134,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toEndOf="@+id/button41"
+        app:layout_constraintStart_toEndOf="@+id/addtime2"
         app:layout_constraintTop_toBottomOf="@+id/button40"
         app:layout_constraintVertical_bias="0.562" />
 
