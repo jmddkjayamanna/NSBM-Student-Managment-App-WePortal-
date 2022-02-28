@@ -4,23 +4,101 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.Toast
+import android.widget.*
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
+import com.google.firebase.database.FirebaseDatabase
 
 class adminnotices : AppCompatActivity() {
+    private val database =
+        FirebaseDatabase.getInstance("https://nsbm-weportal-77238-default-rtdb.asia-southeast1.firebasedatabase.app/")
+    private val databaseref = database.reference.child("notice")
+
+    var batch = arrayOf(
+        "Click To Select Batch",
+        "18.2",
+        "19.1",
+        "19.2",
+        "20.1",
+        "20.2",
+        "20.3",
+        "21.1",
+        "All"
+    )
+    var Degree = arrayOf(
+        "Click To Select Degree",
+        "Management Information Systems (UGC)",
+        "Management Information Systems (UCD)",
+        "Software Engineering (UGC)",
+        "Software Engineering (Plymoth)",
+        "All"
+    )
+
+    var Selectedbatch = ""
+    var SelectedDegree = ""
+    var N = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_adminnotices)
         Menu()
+
+        var getbatch = findViewById<Spinner>(R.id.batchspin3)
+        var getdegree = findViewById<Spinner>(R.id.degreespin3)
+
+        var noticebtn = findViewById<Button>(R.id.noticeAdd2)
+
+        //Spinner Part
+        val arrAdapter = ArrayAdapter(getApplicationContext(), R.layout.custom_spinner_1, batch)
+        getbatch.adapter = arrAdapter
+        val arrAdapter2 = ArrayAdapter(getApplicationContext(), R.layout.custom_spinner_1, Degree)
+        getdegree.adapter = arrAdapter2
+
+        getbatch.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                Selectedbatch = batch.get(position)
+
+
+            }
+
+            override fun onNothingSelected(p0: AdapterView<*>?) {
+
+            }
+        }
+        getdegree.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                SelectedDegree = Degree.get(position)
+
+
+            }
+
+            override fun onNothingSelected(p0: AdapterView<*>?) {
+
+            }
+        }
+
+        noticebtn.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(view: View?) {
+                InsertNotice()
+            }
+        })
+
     }
-    private fun Menu()
-    {
+
+    private fun Menu() {
         val drawerLayout: DrawerLayout = findViewById(R.id.drawerLayoutL3)
         val navView: NavigationView = findViewById(R.id.nav_viewL3)
-        val btn=findViewById<Button>(R.id.menul3)
+        val btn = findViewById<Button>(R.id.menul3)
 
         btn.setOnClickListener(object : View.OnClickListener {
             override fun onClick(view: View?) {
@@ -33,19 +111,21 @@ class adminnotices : AppCompatActivity() {
         navView.setNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.nav_dash -> {
-                    this.startActivity(Intent(this,admindashboard::class.java))
+                    this.startActivity(Intent(this, admindashboard::class.java))
                     Toast.makeText(
                         applicationContext,
                         "Clicked Dashboard",
                         Toast.LENGTH_SHORT
-                    ).show()}
+                    ).show()
+                }
                 R.id.nav_profile -> {
                     Toast.makeText(
                         applicationContext,
                         "Clicked Profile",
                         Toast.LENGTH_SHORT
                     ).show()
-                    this.startActivity(Intent(this,Profile::class.java))}
+                    this.startActivity(Intent(this, Profile::class.java))
+                }
                 R.id.nav_notices -> Toast.makeText(
                     applicationContext,
                     "Clicked Notices",
@@ -67,12 +147,13 @@ class adminnotices : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
                 R.id.nav_logout -> {
-                    this.startActivity(Intent(this,MainActivity::class.java))
+                    this.startActivity(Intent(this, MainActivity::class.java))
                     Toast.makeText(
                         applicationContext,
                         "Clicked Logout",
                         Toast.LENGTH_SHORT
-                    ).show()}
+                    ).show()
+                }
 
             }
             true
@@ -80,5 +161,20 @@ class adminnotices : AppCompatActivity() {
         }
 
 
+    }
+
+    private fun InsertNotice() {
+        var noticeMSG = findViewById<EditText>(R.id.notice2)
+        val Name = "Admin 1"
+        val Batch = Selectedbatch
+        val Degree = SelectedDegree
+
+
+        val Snotice = Noticeclass(Batch, Degree, noticeMSG.getText().toString(), Name)
+        databaseref.child(Name).setValue(Snotice).addOnSuccessListener {
+            Toast.makeText(this, "Notice Added Succesfully", Toast.LENGTH_LONG).show()
+        }.addOnFailureListener {
+            it.printStackTrace();
+        }
     }
 }
